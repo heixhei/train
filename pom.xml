@@ -5,6 +5,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>member</module>
+        <module>common</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -41,7 +42,20 @@
                 <artifactId>hutool-all</artifactId>
                 <version>5.6.3</version>
             </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.12</version>
+                <scope>test</scope>
+            </dependency>
+            <!--公共模块-->
+            <dependency>
+                <groupId>com.baiyuechu</groupId>
+                <artifactId>common</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
         </dependencies>
+
     </dependencyManagement>
 
     <build>
